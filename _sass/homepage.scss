@@ -1,10 +1,11 @@
 canvas {
   position: absolute;
+  z-index: 1;
 }
 
 .my_name {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   top: 27px;
   left: 35px;
   color: #77ffbc;
@@ -21,7 +22,7 @@ main .bio-pic {
 main .about-me-title {
   color: #fff;
   font-size: 90px;
-  z-index: 3;
+  z-index: 1;
   margin-top: -68px;
   font-weight: bold;
   overflow: hidden;

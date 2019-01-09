@@ -5,7 +5,7 @@
 
 .menu-btn{
     position: absolute;
-    z-index: 3;
+    z-index: 2;
     right: 35px;
     top: 35px;
     cursor: pointer;
@@ -41,6 +41,7 @@
   }
 
   .menu {
+      z-index: 2;
       position: fixed;
       top: 0;
       width: 100%;
@@ -78,9 +79,9 @@
       .nav-item{
         padding: 1rem 0;
 
-        &.current > a {
-            color: $primary-teal;
-        }
+        // &.current > a {
+        //     color: $primary-teal;
+        // }
         .nav-link{
             text-decoration: none;
             font-family: $primary-font;
