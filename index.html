@@ -5,16 +5,53 @@ layout: default
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Matthew Han</title>
-</head>
-<body>
+  </head>
+  <body>
     {% include navigation.html %}
-    <h1>{{"Hello World!"| downcase}}</h1>
-</body>
-    <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/canvas.js"></script>
+    <h1 class="my_name">{{ page.title }}</h1>
+    <main>
+      <div class="main-container">
+        <div class="left-side">
+          <img class="bio-pic" src="./assets/images/matthew.jpg" />
+          <div class="title-holder"><span class="about-me-title"></span></div>
+        </div>
+        <div class="right-side">
+          <div class="paragraph">
+            <p>
+              3rd-year student at the University of Virginia, majoring in
+              Computer Science and Studio Art.
+            </p>
+          </div>
+          <div class="cv">View my <a href="">Resume here.</a></div>
+          <div class="design-portfolio cv">
+            View my <a href="">Design work here.</a>
+          </div>
+          <div class="developer-portfolio cv">
+            View my <a href="">Developer work here.</a>
+          </div>
+          <div class="video-portfolio cv">
+            Watch my <a href="">videos and films here.</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./assets/js/typed.js"></script>
+    <script>
+      var options = {
+        strings: ["Student", "Developer", "Designer", "Videographer"],
+        typeSpeed: 60,
+        backSpeed: 60,
+        backDelay: 700,
+        loop: true
+      };
+
+      var typed = new Typed(".about-me-title", options);
+    </script>
+  </body>
+  <script src="./assets/js/main.js"></script>
 </html>
