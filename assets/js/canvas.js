@@ -94,3 +94,5 @@ function animate(){
 
 init();
 animate();
+
+// document.body.style.background = "url(" + canvas.toDataURL() + ")";

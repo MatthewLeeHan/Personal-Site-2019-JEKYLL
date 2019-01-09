@@ -1,14 +1,23 @@
 $primary-teal: #77FFBC;
 $primary-font: "Poppins", sans-serif;
-body{
+html,body{
     font-family: $primary-font;
     background-color: black;
     margin: 0;
     padding: 0;
+    height: 100%; //stack overflow suggested
 }
 .currentPage{
     color: $primary-teal;
 }
 canvas{
-    z-index: -9;
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    display: block;
+    left:0;
+    top:0;
+}
+.not-canvas *{
+    z-index: 99; //HTML5 CANVAS VIDEO CLICKING FIX
 }

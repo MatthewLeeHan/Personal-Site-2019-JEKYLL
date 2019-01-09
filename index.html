@@ -12,11 +12,9 @@ layout: default
     <title>Matthew Han</title>
   </head>
   <body>
-    <canvas></canvas>
     {% include navigation.html %}
-    <!-- {% include canvas.html %} -->
     <h1 class="my_name">{{ page.title }}</h1>
-    <main>
+    <main class="not-canvas">
       <div class="main-container">
         <div class="left-side">
           <img class="bio-pic" src="./assets/images/matthew.jpg" />
@@ -31,7 +29,7 @@ layout: default
           </div>
           <div class="cv">View my <a href="">Resume here.</a></div>
           <div class="design-portfolio cv">
-            View my <a href="">Design work here.</a>
+            View my <a href="www.google.com">Design work here.</a>
           </div>
           <div class="developer-portfolio cv">
             View my <a href="">Developer work here.</a>
@@ -42,6 +40,8 @@ layout: default
         </div>
       </div>
     </main>
+    {% include canvas.html %}
+    <!-- <canvas></canvas> -->
     <script src="./assets/js/typed.js"></script>
     <script>
       var options = {
@@ -55,6 +55,7 @@ layout: default
       var typed = new Typed(".about-me-title", options);
     </script>
   </body>
+  <!-- {% include canvas.html %} -->
   <script src="./assets/js/main.js"></script>
   <script src="./assets/js/canvas.js"></script>
 
