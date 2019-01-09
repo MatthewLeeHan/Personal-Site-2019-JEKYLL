@@ -1,11 +1,16 @@
 $primary-teal: #77FFBC;
 $primary-font: "Poppins", sans-serif;
+$font-color: #fff;
 html,body{
     font-family: $primary-font;
+    color: $font-color;
     background-color: black;
     margin: 0;
     padding: 0;
     height: 100%; //stack overflow suggested
+}
+h1{
+    color: $primary-teal;
 }
 .currentPage{
     color: $primary-teal;
