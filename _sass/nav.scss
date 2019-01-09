@@ -9,7 +9,7 @@
     top: 35px;
     cursor: pointer;
     @include easeOut();
-    z-index: 999; // HTML5 CANVAS BACKGROUND FIX
+    z-index: 9999; // HTML5 CANVAS BACKGROUND FIX
 
     .btn-line{
       width: 28px;
