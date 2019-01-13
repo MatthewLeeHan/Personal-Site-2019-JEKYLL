@@ -1,0 +1,31 @@
+.container{
+    border: 1px solid white;
+    width: 97%;
+    height: calc(100% - 80px); //80px is height of header, accounting for that
+    margin: 0 auto;
+    display: flex;
+    .left-side{
+        border: 1px solid white;
+        .bio-pic{
+            width: 40vw;
+            margin: 0rem 0 0 2rem;
+            display: inline-block;
+        }
+        .about-me-title{
+            color: #fff;
+            font-size: 90px;
+            margin-top: -68px;
+            font-weight: bold;
+            overflow: hidden;
+        }
+        .title-holder{
+            position: absolute;
+            margin-top: -67px;
+            width: auto;
+            margin-left: 50px;
+        }
+    }
+    .right-side{
+        border: 1px solid white;
+    }
+}
