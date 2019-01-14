@@ -1,17 +1,21 @@
-<h1 class="my_name">Matthew Han</h1>
 <header>
+    <div class="my_name_holder">
+        <h1 class="my_name">Matthew Han</h1>
+    </div>
+    <div class="menu-btn-holder">
         <div class="menu-btn">
             <div class="btn-line"></div>
             <div class="btn-line"></div>
             <div class="btn-line"></div>
         </div>
-        <nav class="menu">
-            <ul class="menu-nav">
-                {% for item in site.data.navigation %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ item.link }}" {% if page.url == item.link %}class="currentPage"{% endif %}>{{ item.name }}</a>
-                    </li>
-                {% endfor %}
-            </ul>
-        </nav>
+    </div>
 </header>
+<nav class="menu">
+        <ul class="menu-nav">
+            {% for item in site.data.navigation %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ item.link }}" {% if page.url == item.link %}class="currentPage"{% endif %}>{{ item.name }}</a>
+                    </li>
+            {% endfor %}
+        </ul>
+</nav>
