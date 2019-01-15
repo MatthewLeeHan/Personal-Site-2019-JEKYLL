@@ -1,0 +1,38 @@
+// youtube and insta
+@keyframes pulse{
+    0%{
+        width: 80px;
+    }
+    50%{
+        width: 85px;
+    }
+    100%{
+        width: 80px;
+    }
+}
+
+// insta
+@keyframes pulse2{
+    0%{
+        width: 74px;
+    }
+    50%{
+        width: 79px;
+    }
+    100%{
+        width: 74px;
+    }
+}
+
+//github
+@keyframes pulse3{
+    0%{
+        width: 65px;
+    }
+    50%{
+        width: 70px;
+    }
+    100%{
+        width: 65px;
+    }
+}

@@ -4,6 +4,7 @@
     height: calc(100% - 80px); //80px is height of header, accounting for that
     margin: 0 auto;
     display: flex;
+    // overflow: hidden;
     .left-side{
         // border: 1px solid white;
         flex: 1;
@@ -33,6 +34,8 @@
     }
     .right-side{
         display: flex;
+        flex-direction: column;
+        // border: 1px solid white;
         .text{
             margin-top: 60px;
         }
@@ -51,6 +54,45 @@
                 z-index: 9999; // HTML5 CANVAS BACKGROUND FIX
                 font-weight: 600;
                 color: $primary-teal;
+            }
+        }
+        .icons-holder{
+            display: flex;
+            height: 100%;
+            // border: 1px solid white;
+            align-items: flex-end;
+            justify-content: flex-end;
+            .github{
+                width: 60px;
+                padding: 0 10px 30px 10px;
+                &:hover{
+                    width: 65px;
+                    animation: pulse3 1s linear infinite;
+                }
+            }
+            .linkedin{
+                width: 69px;
+                padding: 0 10px 30px 10px;
+                &:hover{
+                    width: 74px;
+                    animation: pulse2 1s linear infinite;
+                }
+            }
+            .youtube{
+                width: 80px;
+                padding: 0 10px 30px 10px;
+                &:hover{
+                    // width: 85px;
+                    animation: pulse 1s linear infinite;
+                }
+            }
+            .insta{
+                width: 80px;
+                padding: 0 0 20px 0px;
+                &:hover{
+                    // width: 85px;
+                    animation: pulse 1s linear infinite;
+                }
             }
         }
     }
