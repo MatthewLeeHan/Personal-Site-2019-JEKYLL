@@ -14,3 +14,10 @@
         margin: 0 auto;
     }
 } 
+
+// temp fix for weird tiny vertical scroll issue on laptop screen on mint?
+@media screen and (min-width: 1350px){
+    .container{
+        overflow: hidden;
+    }
+}
