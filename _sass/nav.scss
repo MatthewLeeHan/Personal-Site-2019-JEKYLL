@@ -67,10 +67,11 @@ header{
       position: fixed;
       top: 0;
       width: 100%;
-      opacity: 0.9;
+    //   opacity: 0.9;
       visibility: hidden;
       z-index: 999; // HTML5 CANVAS BACKGROUND FIX
     //   border: 1px solid white;
+      background-color: black;
 
       &.show{
           visibility: visible;
@@ -119,5 +120,12 @@ header{
             z-index: 9999; // HTML5 CANVAS BACKGROUND FIX
         }
       }
+    //   .blur-bg{
+    //     @include blur();
+    //   }
 
   }
+  .moveBack{
+    display: none;
+    // border: 10x solid red;
+    }
