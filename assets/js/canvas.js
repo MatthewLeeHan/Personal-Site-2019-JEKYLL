@@ -71,6 +71,7 @@ function Circle(x, y, dx, dy, radius) {
 
 var circleArray = [];
 
+// dot generation
 function init(){
     circleArray = [];
     var width = window.innerWidth;

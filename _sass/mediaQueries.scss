@@ -1,4 +1,11 @@
-@media screen and (max-width: 1000px){
+// temp fix for weird tiny vertical scroll issue on laptop screen on mint?
+@media screen and (min-width: 1350px){
+    .container{
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 1024px){
     .container{
         flex-direction: column;
         .bio-pic{
@@ -53,11 +60,41 @@
         }
     }
 } 
-
-// temp fix for weird tiny vertical scroll issue on laptop screen on mint?
-@media screen and (min-width: 1350px){
-    .container{
+// iPad responsive size from google dev tools
+@media screen and (max-width: 768px){
+    .right-side{
+        margin-top: -2vh !important;
         overflow: hidden;
+        .paragraph{
+            p{
+                font-size: 14px;
+                margin: 0;
+                padding: 10px 0 15px 0;
+            }
+        }
+        .link-holder{
+            font-size: 4vw !important;
+        }
+        .icons-holder{
+            margin-bottom: -20px !important;
+        }
+    }
+    .left-side{
+        .bio-pic{
+            margin-top: 30px;
+            width: 550px !important;
+            height: 550px !important;
+        }
+        .about-me-title{
+            font-size: 10vw !important;
+        }
+        .title-holder{
+            position: absolute;
+            bottom: -5vh !important;
+            left: 3vw;
+            margin: 0;
+            padding: 0;
+        }
     }
 }
 
@@ -97,6 +134,21 @@
 
 // mobile
 @media screen and (max-width: 450px){
+    // my name in nav
+    .my_name_holder{
+        margin: 0 auto;
+    }
+    .my_name{
+        font-size: 25px;
+        // margin-left: 13vw !important;
+    }
+    .menu-btn-holder{
+        right: 20px !important;
+        top: 29px !important;
+        .btn-line{
+            width: 23px !important;
+        }
+    }
     .right-side{
         margin-top: -11vh !important;
         .paragraph{
