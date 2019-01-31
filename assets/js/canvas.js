@@ -73,7 +73,18 @@ var circleArray = [];
 
 function init(){
     circleArray = [];
-    for (var i = 0; i < 200; i++){
+    var width = window.innerWidth;
+    var dotsLimit = 0;
+    if (width > 700){
+        dotsLimit = 200;
+    }
+    if (width <= 700){
+        dotsLimit = 100;
+    }
+    if (width <=450){
+        dotsLimit = 87;
+    }
+    for (var i = 0; i < dotsLimit; i++){
         var radius = Math.random() * 3 + 1;
         var x = Math.random() * (innerWidth - radius * 2) + radius;
         var y = Math.random() * (innerHeight - radius * 2) + radius;
