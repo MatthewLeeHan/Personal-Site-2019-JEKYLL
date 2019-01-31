@@ -7,11 +7,50 @@
             justify-content: center;
             margin: 0 auto;
         }
+        .right-side{
+            text-align: center;
+            margin-top: -5vh;
+            .paragraph{
+                align-items: flex-start;
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
     }
 
     .icons-holder{
         justify-content: center;
         margin: 0 auto;
+        .github{
+            width: 30px !important;
+        }
+        .youtube{
+            width: 40px !important;
+        }
+        .linkedin{
+            width: 34.5px !important;
+        }
+        .insta{
+            width: 40px !important;
+            padding-bottom: 24px !important;
+        }
+    }
+
+    .left-side{
+        .bio-pic{
+            width: 400px !important;
+            height: 400px !important;
+        }
+        .about-me-title{
+            font-size: 8vw !important;
+        }
+        .title-holder{
+            position: absolute;
+            bottom: -6vh !important;
+            left: 3vw;
+            margin: 0;
+            padding: 0;
+        }
     }
 } 
 
@@ -19,5 +58,73 @@
 @media screen and (min-width: 1350px){
     .container{
         overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .right-side{
+        margin-top: -2vh !important;
+        overflow: hidden;
+        .paragraph{
+            p{
+                font-size: 12px !important;
+            }
+        }
+        .link-holder{
+            font-size: 4vw !important;
+        }
+        .icons-holder{
+            margin-bottom: -20px !important;
+        }
+    }
+    .left-side{
+        .bio-pic{
+            width: 350px !important;
+            height: 350px !important;
+        }
+        .about-me-title{
+            font-size: 10vw !important;
+        }
+        .title-holder{
+            position: absolute;
+            bottom: -6vh !important;
+            left: 3vw;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+// mobile
+@media screen and (max-width: 450px){
+    .right-side{
+        margin-top: -11vh !important;
+        .paragraph{
+            p{
+                font-size: 12px !important;
+            }
+        }
+        .link-holder{
+            font-size: 5vw !important;
+        }
+        .icons-holder{
+            margin-bottom: -20px !important;
+        }
+    }
+    .left-side{
+        .bio-pic{
+            width: 280px !important;
+            height: 280px !important;
+        }
+        .about-me-title{
+            font-size: 12vw !important;
+        }
+        .title-holder{
+            position: absolute;
+            bottom: -4.5vh !important;
+            left: 3vw;
+            margin: 0;
+            padding: 0;
+        }
     }
 }

@@ -39,16 +39,6 @@
     .right-side{
         display: flex;
         flex-direction: column;
-        // border: 1px solid white;
-        // &.moveB        // &.moveBack{
-        //     z-index: -1;
-        // }        // &.moveBack{
-        //     z-index: -1;
-        // }        // &.moveBack{
-        //     z-index: -1;
-        // }ack{
-        //     z-index: -1;
-        // }
         .text{
             margin-top: 60px;
         }
@@ -82,7 +72,7 @@
                 padding: 0 10px 30px 10px;
                 &:hover{
                     width: 65px;
-                    animation: pulse3 1s linear infinite;
+                    // animation: pulse3 1s linear infinite;
                 }
             }
             .linkedin{
@@ -90,7 +80,7 @@
                 padding: 0 10px 30px 10px;
                 &:hover{
                     width: 74px;
-                    animation: pulse2 1s linear infinite;
+                    // animation: pulse2 1s linear infinite;
                 }
             }
             .youtube{
@@ -98,7 +88,7 @@
                 padding: 0 10px 30px 10px;
                 &:hover{
                     // width: 85px;
-                    animation: pulse 1s linear infinite;
+                    // animation: pulse 1s linear infinite;
                 }
             }
             .insta{
@@ -106,7 +96,7 @@
                 padding: 0 0 20px 0px;
                 &:hover{
                     // width: 85px;
-                    animation: pulse 1s linear infinite;
+                    // animation: pulse 1s linear infinite;
                 }
             }
         }
@@ -115,4 +105,7 @@
 .typed-cursor {
     color: white;
     font-size: 7vw;
+}
+.hideIcons{
+    display: none !important;
 }
